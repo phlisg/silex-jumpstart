@@ -2,16 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Silex Jumpstart</title>
+    <link rel="stylesheet" href="css/bulma.css">
 </head>
 <body>
-    <h2>Hey!</h2>
-    <p>You are running Silex version 2.0.3</p>
-    <h3>Services loaded:</h3>
-    <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-    </ul>
+<section class="hero is-fullheight is-dark is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-2">
+                        Silex Jumpstart
+                    </h1>
+                    <h2 class="subtitle">
+                        A Silex Framework pre-bootsrapped project.
+                    </h2>
+                </div>
+                <!-- /.column -->
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="img/silex-logo.png" alt="The Silex Framework logo. A pair of silex stones with a pair of eyes on them.">
+                    </figure>
+                    <!-- /.image is-128x128 -->
+                </div>
+                <!-- /.column -->
+            </div>
+            <!-- /.columns -->
+
+
+            <p class="subtitle">
+                This template is rendered from <i>src/Views/default/default.html.twig</i>, and handled by DefaultController, located in <i>src/Controllers/DefaultController.php</i>.
+                <br>
+                <br>
+            </p>
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4">
+                        Available components:
+                    </h4>
+                </div>
+                <!-- /.column -->
+                <div class="column">
+                    <ul>
+                        {% for module, version in composer.require %}
+                            <li>{{ module }} : {{ version }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- /.column -->
+            </div>
+            <!-- /.columns -->
+            <nav class="nav has-shadow">
+                <div class="container">
+                    <div class="nav-left">
+                        <a target="_blank" href="http://silex.sensiolabs.org/doc/master/" class="nav-item is-tab">Silex Documentation</a>
+                        <a target="_blank" href="https://github.com/Phlisg/silex-jumpstart" class="nav-item is-tab">Github</a>
+                        <a target="_blank" href="http://bulma.io" class="nav-item is-tab">Bulma Sass Framework</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- /.container -->
+    </div>
+</section>
+<section class="section">
+    <p class="has-text-centered">
+        2016 &copy; Phlisg
+    </p>
+    <!-- /.has-text-centered -->
+</section>
+<!-- /.section -->
 </body>
 </html>

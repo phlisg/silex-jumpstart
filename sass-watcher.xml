@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$/web/css/$FileNameWithoutExtension$.css --style compressed" />
+    <option name="checkSyntaxErrors" value="true" />
+    <option name="description" value="Compiles .sass files into .css files" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="sass" />
+    <option name="immediateSync" value="true" />
+    <option name="name" value="Sass" />
+    <option name="output" value="$ProjectFileDir$/web/css/$FileNameWithoutExtension$.css:$ProjectFileDir$/web/css/$FileNameWithoutExtension$.css.map" />
+    <option name="outputFilters">
+      <array />
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="A:/Ruby22-x64/bin/sass.bat" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="true" />
+    <option name="workingDir" value="$FileDir$" />
+    <envs />
+  </TaskOptions>
+</TaskOptions>
+

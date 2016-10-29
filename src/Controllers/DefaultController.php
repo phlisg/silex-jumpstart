@@ -14,6 +14,10 @@ class DefaultController
 {
     public function defaultView(Application $app)
     {
-        return $app['twig']->render('default/default.html.twig');
+        $composer = json_decode(file_get_contents(__DIR__ . '/../../composer.json'), true);
+
+        return $app['twig']->render('default/default.html.twig', [
+            'composer' => $composer,
+        ]);
     }
 }
