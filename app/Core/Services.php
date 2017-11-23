@@ -12,6 +12,10 @@ $app->register(new Provider\TwigServiceProvider(), [
     'twig.path' => __DIR__ . '/../../src/Views',
 ]);
 
+$app->register(new Silex\Provider\AssetServiceProvider(), [
+    'assets.version'        => 'v1',
+]);
+
 /*
  * Twig web Profiler
  * */
