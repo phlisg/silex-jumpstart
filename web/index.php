@@ -9,7 +9,7 @@ require_once __DIR__ . '/../app/App.php';
 /*
  * Initialize the Application
  * */
-$app = new App();
+$app = new App\App();
 
 /*
  * Require the application configuration
